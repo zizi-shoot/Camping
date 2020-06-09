@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Beatiful Places of England</title>
+	<link rel="stylesheet" href="./styles/fonts.css">
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/hover.css">
+	<link rel="stylesheet" href="./styles/media.css">
+	<base href="#">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container flex">
+			<div class="burger">
+				<button class="burger__lines" aria-label="Menu">
+					<span class="line line-1"></span>
+					<span class="line line-2"></span>
+					<span class="line line-3"></span>
+				</button>
+				<nav class="burger__nav">
+					<ul class="nav__list">
+						<li class="list__item"><a href="" class="item__link">About</a></li>
+						<li class="list__item"><a href="" class="item__link">Contact</a></li>
+						<li class="list__item"><a href="" class="item__link">Sign In</a></li>
+						<li class="list__item"><a href="" class="item__link">Sign Up</a></li>
+					</ul>
+				</nav>
+			</div>
+			<ul class="header__left-list flex">
+				<li class="left-list__item list__item"><a href="" class="item__link">About</a></li>
+				<li class="left-list__item list__item"><a href="" class="item__link">Contact</a></li>
+			</ul>
+			<a href="" class="header__logo">Camping.</a>
+			<ul class="header__right-list flex">
+				<li class="right-list__item list__item"><a href="" class="item__link">Sign In</a></li>
+				<li class="right-list__item list__item"><a href="" class="item__link">Sign Up</a></li>
+				<li class="right-list__item list__item"><button class="header__btn-search" aria-label="Search on site"></button>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<main class="main container flex">
+		<section class="hero">
+			<h1 class="hero__title">Beatiful Places of&nbsp;England</h1>
+			<p class="hero__description">Plan your vacation on the most beatiful places of England</p>
+		</section>
+		<a href="" class="aerial-view">Aerial View of Rock Cliffs</a>
+		<form class="booking flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+			<h3 class="booking__title">Book your vacation</h3>
+
+			<div class="booking__input-group">
+				<label for="accomodation" class="booking__label label__accomodation">Accommodation</label>
+				<input class="booking__input input__accomodation" type="text" name="Accommodation"
+					value="6730 Luna Land North Rhiannonmouth" id="accomodation">
+			</div>
+
+			<div class="booking__wrapper">
+				<div class="booking__input-group">
+					<label for="check-in" class="booking__label label__check-in">Check-in</label>
+					<input class="booking__input input__check-in" type="text" name="Check-in" value="19.06.2019" id="check-in">
+				</div>
+
+				<div class="booking__input-group">
+					<label for="check-out" class="booking__label label__check-out">Check-out</label>
+					<input class="booking__input input__check-out" type="text" name="Check-out" value="19.06.2019" id="check-out">
+				</div>
+
+				<div class="booking__input-group">
+					<label for="guests" class="booking__label label__guests">Guests</label>
+					<input class="booking__input input__guests" type="text" name="Guests" value="4 adults" id="guests">
+				</div>
+			</div>
+
+			<button class="booking__btn-search" aria-label="Search offers">Search</button>
+		</form>
+	</main>
+
+
+
+</body>
+
+</html>

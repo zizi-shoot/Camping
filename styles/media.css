@@ -1,0 +1,256 @@
+@media (max-width: 1470px) {
+	body {
+		background-position-x: 0, -200px;
+	}
+
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main {
+		padding-top: 190px;
+	}
+
+	.hero {
+		margin-left: 3vw;
+	}
+
+	.hero__title {
+		max-width: 600px;
+		margin-bottom: 10px;
+		font-size: 70px;
+	}
+
+	.hero__description {
+		font-size: 25px;
+	}
+
+	.aerial-view {
+		top: 250px;
+		width: 430px;
+		padding: 90px 250px 90px 20px;
+		font-size: 28px;
+	}
+	.aerial-view::after {
+		left: 23px;
+	}
+
+	.booking {
+		max-width: 60%;
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+	.booking__wrapper {
+		width: 100%;
+	}
+
+	.booking__wrapper .booking__input-group {
+		width: 33%;
+	}
+
+	.booking .booking__input-group {
+		width: 100%;
+	}
+
+	.booking__input-group {
+		margin-bottom: 20px;
+	}
+
+	.input__accomodation {
+		width: 100%;
+		border: 1px solid rgba(231, 231, 242, 0.3);
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.input__check-in,
+	.input__check-out,
+	.input__guests {
+		width: 100%;
+	}
+
+	.input__check-in {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.booking__btn-search {
+		margin: 0 auto;
+	}
+
+}
+
+@media (max-width: 1024px) {
+	body {
+		background-position-x: 0, -950px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.left-list__item,
+	.right-list__item:not(:last-child),
+	.header__left-list {
+		display: none;
+	}
+
+	.right-list__item:last-child {
+		margin-left: 0;
+	}
+
+	.header__logo {
+		font-size: 40px;
+		
+	}
+	.header__logo:hover {
+		transform: none;
+	}
+
+	.header__btn-search {
+		width: 30px;
+		height: 30px;
+		background-size: 30px;
+	}
+
+	.main {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+	}
+
+
+	.hero {
+		margin-bottom: 40px;
+	}
+
+	.aerial-view {
+		position: relative;
+		top: 0;
+		right: -20px;
+		align-self: flex-end;
+		margin-bottom: 40px;
+	}
+
+	.booking {
+		backdrop-filter: blur(5px)
+	}
+
+	.booking__input {
+		font-weight: 400;
+	}
+
+	.booking__wrapper {
+		flex-direction: column;
+	}
+
+	.input__check-in,
+	.input__check-out {
+		border-right: 1px solid rgba(231, 231, 242, 0.3);
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.input__check-out {
+		padding-left: 60px;
+	}
+
+	.label__check-out {
+		left: 60px;
+	}
+
+	.booking__wrapper .booking__input-group:nth-of-type(2)::before {
+		content: "";
+		position: absolute;
+		top: 22px;
+		left: 17px;
+		width: 28px;
+		height: 28px;
+		background: url('../img/calendar.svg');
+		background-repeat: no-repeat;
+	}
+
+
+
+}
+
+@media (max-width: 768px) {
+	.hero {
+		margin-right: 3vw;
+	}
+
+	.hero__title {
+		max-width: 100%;
+		font-size: 50px;
+	}
+
+	.hero__description {
+		width: 60%;
+		font-size: 22px;
+	}
+
+	.aerial-view {
+		width: 368px;
+		padding: 90px 200px 90px 20px;
+		font-size: 22px;
+		backdrop-filter: blur(5px)
+	}
+
+	.booking {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero__title {
+		font-size: 38px;
+	}
+
+	.hero__description {
+		width: 90%;
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 414px) {
+	.header__logo {
+		font-size: 35px;
+	}
+
+	.main {
+		padding: 40px 0 0;
+
+
+	}
+
+	.hero {
+		margin: 0 0 40px;
+	}
+
+	.hero__title {
+		letter-spacing: px;
+		text-align: center;
+	}
+
+	.hero__description {
+		width: 88%;
+		margin: 0 auto;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.aerial-view {
+		width: 320px;
+		padding: 30px 130px 50px 20px;
+		position: static;
+	}
+	.aerial-view::before {
+		display: none;
+	}
+	.aerial-view::after {
+		bottom: 20px;
+	}
+
+}

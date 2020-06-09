@@ -1,0 +1,308 @@
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+
+.header__container {
+	padding-top: 43px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(231, 231, 242, .3);
+}
+
+.burger {
+	position: relative;
+	display: none;
+	width: 31px;
+}
+
+.burger__lines {
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.line {
+	display: block;
+	background-color: #fff;
+	width: 30px;
+	height: 3px;
+	border-radius: 10px;
+	margin: 0 auto;
+	transform-origin: left;
+	transition: transform .5s;
+}
+
+.line:not(:last-child) {
+	margin-bottom: 7px;
+}
+
+.burger__nav {
+	position: absolute;
+	top: 64px;
+	right: 100px;
+	padding: 50px 60px 30px;
+	background-color: #4c5353;
+	z-index: 1;
+	transition: transform 1s
+}
+
+.nav__list .list__item {
+	margin-bottom: 30px;
+}
+
+.item__link {
+	font-family: 'SF Pro Text';
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.left-list__item:first-child {
+	margin-right: 61px;
+}
+
+.left-list__item:last-child {
+	margin-right: 110px;
+}
+
+.right-list__item:last-child {
+	margin-left: 85px;
+}
+
+.right-list__item:nth-child(2) {
+	margin-left: 60px;
+}
+
+
+
+.header__logo {
+	font-family: 'SF Pro Display', 'Helvetica', sans-serif;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 0.01em;
+	transition: .5s;
+}
+
+.header__btn-search {
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/search.svg');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	transition: transform .3s
+}
+
+.main {
+	padding-top: 259px;
+	align-items: flex-start;
+}
+
+.hero {
+	margin-bottom: 191px;
+}
+
+.hero__title {
+	max-width: 43vw;
+	margin-bottom: 32px;
+	font-family: 'SF Pro Display';
+	font-size: 5vw;
+	font-weight: 900;
+	line-height: 111%;
+	letter-spacing: 0.01em;
+}
+
+.hero__description {
+	width: 65%;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 150%;
+	opacity: .8;
+}
+
+
+
+.aerial-view {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 314px;
+	width: 570px;
+	padding: 104px 330px 149px 36px;
+	font-family: 'SF Pro Text';
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 137%;
+	background-image: url('../img/rock-cliffs.jpg');
+	background-color: rgba(255, 255, 255, 0.15);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	border-radius: 16px 0px 0px 16px;
+	backdrop-filter: blur(70px);
+}
+
+.aerial-view::before {
+	content: "Up next";
+	position: absolute;
+	top: 34px;
+	font-family: 'SF Pro Display';
+	font-size: 20px;
+	font-weight: 600;
+
+}
+
+.aerial-view::after {
+	content: url('../img/arrow.svg');
+	position: absolute;
+	left: 36px;
+	bottom: 36px;
+}
+
+.booking {
+	max-width: inherit;
+	padding: 36px 48px 56px;
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(70px);
+	border-radius: 20px 20px 0px 0px;
+}
+
+.booking__title {
+	width: 100%;
+	margin-bottom: 16px;
+	letter-spacing: -0.4px;
+}
+
+.booking__wrapper {
+	display: flex;
+
+}
+
+.booking__btn-search {
+	position: relative;
+	padding: 26px 88px;
+	margin-left: auto;
+	font-size: 18px;
+	font-weight: 700;
+	color: inherit;
+	background: #91CB82;
+	border-radius: 10px;
+	transition: color .5s;
+}
+
+.booking__input {
+	padding: 37px 36px 14px 60px;
+	font-weight: 700;
+	color: inherit;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid rgba(231, 231, 242, 0.3);
+}
+
+.booking__input-group {
+	position: relative;
+}
+
+.booking >.booking__input-group::before {
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 19px;
+	width: 28px;
+	height: 28px;
+	background: url('../img/accomodation.svg');
+	background-repeat: no-repeat;
+	opacity: .5;
+}
+.booking > .booking__input-group::after {
+	content: "";
+	position: absolute;
+	top: 21px;
+	right: 16px;
+	width: 28px;
+	height: 28px;
+	background: url('../img/arrow-drop-down-line.svg');
+	background-repeat: no-repeat;
+}
+
+.booking__label {
+	position: absolute;
+	top: 16px;
+	left: 60px;
+	font-size: 14px;
+	color: #E7E7F2;
+	letter-spacing: .4px;
+	opacity: .6;
+}
+
+.input__accomodation {
+	width: 463px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.input__check-in {
+	width: 192px;
+}
+
+.input__check-out {
+	width: 152px;
+	padding-left: 20px;
+}
+
+.input__guests {
+	width: 267px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+.booking__wrapper .booking__input-group:first-child::before {
+	content: "";
+	position: absolute;
+	top:22px;
+	left: 17px;
+	width: 28px;
+	height: 28px;
+	background: url('../img/calendar.svg');
+	background-repeat: no-repeat;
+}
+
+.label__check-out {
+	left: 20px;
+}
+
+.booking__wrapper .booking__input-group:last-child::before {
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 21px;
+	width: 28px;
+	height: 28px;
+	background: url('../img/guests.svg');
+	background-repeat: no-repeat;
+	opacity: .5;
+}
+
+.booking__wrapper .booking__input-group:last-child::after {
+	content: "";
+	position: absolute;
+	top: 22px;
+	right: 14px;
+	width: 28px;
+	height: 28px;
+	background: url('../img/arrow-drop-down-line.svg');
+	background-repeat: no-repeat;
+}
+
+.input__accomodation,
+.input__check-in,
+.input__check-out {
+	border-right: none;
+}
