@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1470px) {
 	body {
 		background-position-x: 0, -200px;
@@ -32,6 +39,7 @@
 		padding: 90px 250px 90px 20px;
 		font-size: 28px;
 	}
+
 	.aerial-view::after {
 		left: 23px;
 	}
@@ -103,9 +111,12 @@
 
 	.header__logo {
 		font-size: 40px;
-		
+
 	}
+
 	.header__logo:hover {
+		-webkit-transform: none;
+		-ms-transform: none;
 		transform: none;
 	}
 
@@ -116,7 +127,12 @@
 	}
 
 	.main {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		padding-top: 100px;
 	}
@@ -130,11 +146,13 @@
 		position: relative;
 		top: 0;
 		right: -20px;
+		-ms-flex-item-align: end;
 		align-self: flex-end;
 		margin-bottom: 40px;
 	}
 
 	.booking {
+		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px)
 	}
 
@@ -143,6 +161,9 @@
 	}
 
 	.booking__wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -195,6 +216,7 @@
 		width: 368px;
 		padding: 90px 200px 90px 20px;
 		font-size: 22px;
+		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px)
 	}
 
@@ -246,9 +268,11 @@
 		padding: 30px 130px 50px 20px;
 		position: static;
 	}
+
 	.aerial-view::before {
 		display: none;
 	}
+
 	.aerial-view::after {
 		bottom: 20px;
 	}
