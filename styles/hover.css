@@ -21,8 +21,8 @@
 
 .burger:hover .line-2 {
 	-webkit-transform: translate(-40px);
-	-ms-transform: translate(-40px);
-	transform: translate(-40px);
+	-ms-transform: translate(-50px);
+	transform: translate(-50px);
 	-webkit-transition: -webkit-transform .5s;
 	transition: -webkit-transform .5s;
 	-o-transition: transform .5s;
