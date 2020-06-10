@@ -170,12 +170,14 @@
 	.input__check-in,
 	.input__check-out {
 		border-right: 1px solid rgba(231, 231, 242, 0.3);
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
+		border-radius: 10px;
 	}
 
 	.input__check-out {
 		padding-left: 60px;
+	}
+	.input__guests {
+		border-radius: 10px;
 	}
 
 	.label__check-out {
